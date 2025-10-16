@@ -1,0 +1,219 @@
+
+<?php include 'header.html';?>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" cpntent="width=device-width, initial-scale=1.0"/>
+    <title>hotel vista</title>
+<style>
+    body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background-color: #1e2a38;
+  color: white;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 12px;
+  transition: background 0.3s;
+}
+
+.nav-links a:hover {
+  background-color: #324255;
+  border-radius: 4px;
+}
+
+.book-btn {
+  background-color: #ffb400;
+  color: #1e2a38;
+  padding: 8px 16px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.book-btn:hover {
+  background-color: #e6a200;
+}
+
+
+
+
+.footer {
+  background-color: #1e2a38;
+  color: #d0d4d9;
+  padding: 40px 0 20px;
+  font-size: 15px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.footer-section {
+  flex: 1;
+  margin: 20px;
+  min-width: 220px;
+}
+
+.footer-section h3, .footer-section h4 {
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section a {
+  text-decoration: none;
+  color: #d0d4d9;
+}
+
+.footer-section a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  border-top: 1px solid #3a4657;
+  padding-top: 15px;
+  font-size: 14px;
+}
+
+.hero {
+  position: relative;
+  height: 100vh;
+  background: url('hotel-room.jpg') no-repeat center center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.4); /* dark overlay */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  text-align: center;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.hero-buttons .btn {
+  padding: 12px 24px;
+  margin: 0 10px;
+  border: none;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+.btn.primary {
+  background-color: #ffb400;
+  color: #1e2a38;
+}
+
+.btn.secondary {
+  background-color: transparent;
+  color: #fff;
+  border: 2px solid #fff;
+}
+</style>
+<!-- Top Navigation Bar -->
+<header>
+  <nav class="navbar">
+    <div class="logo">HotelVista</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="rooms.html">Rooms</a></li>
+      <li><a href="dining.html">Dining</a></li>
+      <li><a href="amenities.html">Amenities</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="contacts.html">Contact</a></li>
+      <li><a href="book.html" class="book-btn">Book Now</a></li>
+    </ul>
+  </nav>
+</header>
+
+
+
+<section class="hero">
+  <div class="hero-overlay">
+    <div class="hero-content">
+      <h1>Escape to Elegance</h1>
+      <p>Experience the perfect blend of comfort and style in downtown luxury.</p>
+      <div class="hero-buttons">
+        <a href="book.html" class="btn primary">Book Now</a>
+        <a href="rooms.html" class="btn secondary">View Rooms</a>
+      </div>
+    </div>
+  </div>
+  
+</section>
+<footer class="footer">
+  <div class="footer-content">
+    <div class="footer-section about">
+      <h3>HotelVista</h3>
+      <p>Luxury redefined. Experience unmatched comfort and elegance in the heart of the city.</p>
+    </div>
+    <div class="footer-section links">
+      <h4>Quick Links</h4>
+      <ul>
+         <li><a href="rooms.html">Rooms</a></li>
+        <li><a href="dining.html">Dining</a></li>
+        <li><a href="spa.html">Spa</a></li>
+        <li><a href="event.html">Events</a></li>
+      </ul>
+    </div>
+    <div class="footer-section contact">
+      <h4>Contact Us</h4>
+      <p>123 Luxury Blvd, Downtown City</p>
+      <p>Email: contact@hotelvista.com</p>
+      <p>Phone: +1 (555) 123-4567</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    &copy; 2025 HotelVista. All rights reserved.
+  </div>
+</footer>
+</html>

@@ -1,0 +1,136 @@
+<style>
+.lounge-bar-section {
+  background-color: #fff;
+  color: #333;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.lounge-bar-section h2 {
+  font-size: 40px;
+  margin-bottom: 20px;
+  color: #4CAF50;
+}
+
+.lounge-bar-section p {
+  max-width: 700px;
+  margin: 0 auto 50px;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.bar-menu-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+.bar-card {
+  background-color: #f9f9f9;
+  width: 280px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease;
+  text-align: left;
+}
+
+.bar-card:hover {
+  transform: translateY(-6px);
+}
+
+.bar-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.bar-info {
+  padding: 20px;
+}
+
+.bar-info h3 {
+  margin: 0 0 10px;
+  color: #4CAF50;
+}
+
+.bar-info p {
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+.bar-price {
+  font-weight: bold;
+  font-size: 16px;
+  color: #333;
+}
+/* Back button styling */
+    .back-button {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      padding: 10px 16px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      z-index: 1000;
+    }
+</style>
+<body>
+    <!-- Back Button -->
+  <button class="back-button" onclick="history.back()">← Back</button>
+
+</body>
+<!-- Lounge Bar Section with Images -->
+<section class="lounge-bar-section">
+  <h2>Skyview Lounge Bar</h2>
+  <p>Relax and enjoy our curated selection of signature cocktails, fine wines, and classic spirits in a stylish atmosphere with panoramic views.</p>
+
+  <div class="bar-menu-grid">
+
+    <!-- Drink Card 1 -->
+    <div class="bar-card">
+      <img src="https://www.parkrangerjohn.com/wp-content/uploads/2017/04/Classic-Martini-15-682x1024.jpg" alt="Signature Martini">
+      <div class="bar-info">
+        <h3>Signature Martini</h3>
+        <p>Vodka, dry vermouth, olive garnish — a timeless classic.</p>
+        <span class="bar-price">$12</span>
+      </div>
+    </div>
+
+    <!-- Drink Card 2 -->
+    <div class="bar-card">
+      <img src="https://static.vecteezy.com/system/resources/previews/032/489/143/large_2x/mojito-magic-the-star-of-the-nightclub-scene-generative-ai-photo.jpg" alt="Skyview Mojito">
+      <div class="bar-info">
+        <h3>Skyview Mojito</h3>
+        <p>White rum, mint, lime, soda — refreshing with a view.</p>
+        <span class="bar-price">$10</span>
+      </div>
+    </div>
+
+    <!-- Drink Card 3 -->
+    <div class="bar-card">
+      <img src="https://tse1.mm.bing.net/th/id/OIP._DK97SnQJP-dpHpi4VDbqwHaHa?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Old Fashioned">
+      <div class="bar-info">
+        <h3>Old Fashioned</h3>
+        <p>Bourbon, bitters, sugar, orange twist — smooth and bold.</p>
+        <span class="bar-price">$11</span>
+      </div>
+    </div>
+
+    <!-- Drink Card 4 -->
+    <div class="bar-card">
+      <img src="https://tse3.mm.bing.net/th/id/OIP.gYa9KCxQ-7FXsml_ufWWIgHaLH?cb=12&w=1024&h=1536&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Sunset Spritz">
+      <div class="bar-info">
+        <h3>Sunset Spritz</h3>
+        <p>Aperol, prosecco, soda, orange slice — light & bubbly.</p>
+        <span class="bar-price">$9</span>
+      </div>
+    </div>
+
+  </div>
+</section>

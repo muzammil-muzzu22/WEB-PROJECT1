@@ -1,0 +1,136 @@
+<style>
+.room-menu-section {
+  background-color: #fff;
+  color: #333;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.room-menu-section h2 {
+  font-size: 40px;
+  margin-bottom: 20px;
+  color: #4CAF50;
+}
+
+.room-menu-section p {
+  max-width: 700px;
+  margin: 0 auto 50px;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.room-menu-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+.room-menu-card {
+  background-color: #f9f9f9;
+  width: 280px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease;
+  text-align: left;
+}
+
+.room-menu-card:hover {
+  transform: translateY(-6px);
+}
+
+.room-menu-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.room-menu-info {
+  padding: 20px;
+}
+
+.room-menu-info h3 {
+  margin: 0 0 10px;
+  color: #4CAF50;
+}
+
+.room-menu-info p {
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+.room-price {
+  font-weight: bold;
+  font-size: 16px;
+  color: #333;
+}
+/* Back button styling */
+    .back-button {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      padding: 10px 16px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      z-index: 1000;
+    }
+</style>
+<body>
+    <!-- Back Button -->
+  <button class="back-button" onclick="history.back()">← Back</button>
+
+</body>
+<!-- In-Room Dining Menu Section -->
+<section class="room-menu-section">
+  <h2>In-Room Dining</h2>
+  <p>Enjoy a variety of delicious meals and beverages from the comfort of your room. Our 24/7 in-room dining service offers something for every taste, delivered fresh and hot to your door.</p>
+
+  <div class="room-menu-grid">
+
+    <!-- Menu Item 1 -->
+    <div class="room-menu-card">
+      <img src="https://cdn.momsdish.com/wp-content/uploads/2023/07/Club-Sandwich-6.jpg" alt="Club Sandwich">
+      <div class="room-menu-info">
+        <h3>Classic Club Sandwich</h3>
+        <p>Triple-stacked with chicken, bacon, lettuce, tomato & mayo. Served with fries.</p>
+        <span class="room-price">$14</span>
+      </div>
+    </div>
+
+    <!-- Menu Item 2 -->
+    <div class="room-menu-card">
+      <img src="https://cdn.apartmenttherapy.info/image/fetch/f_auto,q_auto:eco/https://storage.googleapis.com/gen-atmedia/3/2017/10/c54907276a7cb6e0545ae2128bdc984e86b6cb9d.jpeg" alt="Pasta Alfredo">
+      <div class="room-menu-info">
+        <h3>Fettuccine Alfredo</h3>
+        <p>Creamy parmesan sauce over tender pasta, with optional grilled chicken.</p>
+        <span class="room-price">$17</span>
+      </div>
+    </div>
+
+    <!-- Menu Item 3 -->
+    <div class="room-menu-card">
+      <img src="https://i.pinimg.com/originals/14/4d/a5/144da5fa49f8935f0faebfc31739f0cf.jpg" alt="Breakfast Platter">
+      <div class="room-menu-info">
+        <h3>American Breakfast</h3>
+        <p>Two eggs any style, toast, hash browns, sausage or bacon, juice & coffee.</p>
+        <span class="room-price">$16</span>
+      </div>
+    </div>
+
+    <!-- Menu Item 4 -->
+    <div class="room-menu-card">
+      <img src="https://ichef.bbci.co.uk/food/ic/food_16x9_1600/recipes/new_york_cheesecake_20451_16x9.jpg" alt="Cheesecake">
+      <div class="room-menu-info">
+        <h3>New York Cheesecake</h3>
+        <p>Rich, creamy slice served with fresh berries and whipped cream.</p>
+        <span class="room-price">$8</span>
+      </div>
+    </div>
+
+  </div>
+</section>

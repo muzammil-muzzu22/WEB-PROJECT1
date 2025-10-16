@@ -1,0 +1,210 @@
+
+<style>
+.events-section {
+  background-color: #fff;
+  color: #333;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.events-section h2 {
+  font-size: 42px;
+  margin-bottom: 20px;
+}
+
+.events-section p {
+  font-size: 18px;
+  max-width: 700px;
+  margin: 0 auto 50px;
+  line-height: 1.6;
+}
+
+.event-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.event-card {
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  width: 300px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.event-card:hover {
+  transform: translateY(-10px);
+}
+
+.event-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.event-card h3 {
+  margin: 16px 0 8px;
+  color: #4CAF50;
+}
+
+.event-card p {
+  padding: 0 16px 20px;
+  font-size: 15px;
+}
+.pricing-section {
+  background-color: #f9f9f9;
+  color: #333;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.pricing-section h2 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.pricing-section p {
+  font-size: 18px;
+  max-width: 700px;
+  margin: 0 auto 50px;
+  line-height: 1.6;
+}
+
+.pricing-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.pricing-card {
+  background-color: #fff;
+  border: 2px solid #4CAF50;
+  border-radius: 10px;
+  width: 300px;
+  padding: 30px 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease;
+}
+
+.pricing-card:hover {
+  transform: translateY(-8px);
+}
+
+.pricing-card h3 {
+  color: #4CAF50;
+  margin-bottom: 10px;
+}
+
+.pricing-card .price {
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
+  margin: 10px 0 20px;
+}
+
+.pricing-card ul {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+}
+
+.pricing-card ul li {
+  margin-bottom: 10px;
+  position: relative;
+  padding-left: 20px;
+}
+
+.pricing-card ul li::before {
+  content: "✔";
+  color: #4CAF50;
+  position: absolute;
+  left: 0;
+}
+/* Back button styling */
+    .back-button {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      padding: 10px 16px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      z-index: 1000;
+    }
+</style>
+<body>
+    <!-- Back Button -->
+  <button class="back-button" onclick="history.back()">← Back</button>
+
+</body>
+<!-- Event Pricing Section -->
+<section class="pricing-section">
+  <h2>Event Packages & Pricing</h2>
+  <p>Choose the perfect package tailored to your event needs. We offer transparent pricing with exceptional value and service.</p>
+
+  <div class="pricing-cards">
+    <div class="pricing-card">
+      <h3>Wedding Package</h3>
+      <p class="price">$5,000</p>
+      <ul>
+        <li>Banquet hall (up to 300 guests)</li>
+        <li>Custom décor & lighting</li>
+        <li>Gourmet catering (buffet or plated)</li>
+        <li>Bridal suite & dressing room</li>
+      </ul>
+    </div>
+
+    <div class="pricing-card">
+      <h3>Business Conference</h3>
+      <p class="price">$2,500</p>
+      <ul>
+        <li>Conference hall (up to 150 attendees)</li>
+        <li>Projector & AV equipment</li>
+        <li>Coffee, tea, and snack service</li>
+        <li>Wi-Fi & technical support</li>
+      </ul>
+    </div>
+
+    <div class="pricing-card">
+      <h3>Private Party</h3>
+      <p class="price">$1,200</p>
+      <ul>
+        <li>Indoor or outdoor space</li>
+        <li>Theme decorations</li>
+        <li>Buffet or à la carte menu</li>
+        <li>DJ/music setup available</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- Events Section -->
+<section class="events-section">
+  <h2>Host Memorable Events</h2>
+  <p>From elegant weddings to corporate meetings, our hotel provides world-class venues and service to make your events unforgettable.</p>
+
+  <div class="event-cards">
+    <div class="event-card">
+      <img src="https://www.hotel-mansoureddahbi.com/wp-content/uploads/2019/08/Wedding-Hotels.jpg" alt="Wedding Event">
+      <h3>Weddings</h3>
+      <p>Celebrate your special day in our luxurious banquet halls with custom decor and gourmet catering.</p>
+    </div>
+    <div class="event-card">
+      <img src="https://r1imghtlak.mmtcdn.com/f64a80defea311e8b9420242ac110003.jpg" alt="Business Conference">
+      <h3>Business Conferences</h3>
+      <p>Host productive corporate events with state-of-the-art meeting rooms and full tech support.</p>
+    </div>
+    <div class="event-card">
+      <img src="https://th.bing.com/th/id/R.c064d01fc91968ad0d31c5e11989603b?rik=U%2fJpHsvxoDQxcQ&riu=http%3a%2f%2fwww.lalocandapa.com%2fimages%2flightbox%2fimage-3.png&ehk=6lpiZYSHf3yMwcLFqkI1o%2byCLHQkLTUwVfhGYVKND0E%3d&risl=&pid=ImgRaw&r=0" alt="Private Party">
+      <h3>Private Parties</h3>
+      <p>Plan birthday parties, anniversaries, and social gatherings with flexible indoor and outdoor spaces.</p>
+    </div>
+  </div>
+</section>

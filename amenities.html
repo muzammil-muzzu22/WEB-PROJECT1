@@ -1,0 +1,233 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" cpntent="width=device-width, initial-scale=1.0"/>
+    <title>hotel vista</title>
+<style>
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background-color: #1e2a38;
+  color: white;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 12px;
+  transition: background 0.3s;
+}
+
+.nav-links a:hover {
+  background-color: #324255;
+  border-radius: 4px;
+}
+
+.book-btn {
+  background-color: #ffb400;
+  color: #1e2a38;
+  padding: 8px 16px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.book-btn:hover {
+  background-color: #e6a200;
+}
+
+/* Reset some basic styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Amenities Section */
+#amenities {
+  /* padding: 60px 20px; */
+  background-color: #fff;
+  text-align: center;
+}
+
+#amenities h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #222;
+}
+
+/* Grid Layout */
+.amenities-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Individual Amenity Card */
+.amenity {
+  background-color: #f1f1f1;
+  padding: 50px;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.amenity:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.amenity img {
+  width: 300px;
+  height: 300px;
+  margin-bottom: 15px;
+}
+
+.amenity p {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #333;
+}
+
+.footer {
+  background-color: #1e2a38;
+  color: #d0d4d9;
+  padding: 40px 0 20px;
+  font-size: 15px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.footer-section {
+  flex: 1;
+  margin: 20px;
+  min-width: 220px;
+}
+
+.footer-section h3, .footer-section h4 {
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section a {
+  text-decoration: none;
+  color: #d0d4d9;
+}
+
+.footer-section a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  border-top: 1px solid #3a4657;
+  padding-top: 15px;
+  font-size: 14px;
+}
+</style>
+
+<!-- Top Navigation Bar -->
+<header>
+  <nav class="navbar">
+    <div class="logo">HotelVista</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="rooms.html">Rooms</a></li>
+      <li><a href="dining.html">Dining</a></li>
+      <li><a href="amenities.html">Amenities</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="contacts.html">Contact</a></li>
+      <li><a href="book.html" class="book-btn">Book Now</a></li>
+    </ul>
+  </nav>
+</header>
+
+<marquee><p><h2>At our hotel, we pride ourselves on offering a full range of premium amenities to ensure a comfortable and memorable stay.<br> Guests can enjoy access to a state-of-the-art fitness center, a luxurious spa, an outdoor swimming pool, and complimentary high-speed Wi-Fi throughout the property.<br> For business travelers, our modern conference facilities and 24/7 business center provide everything needed for productivity. <br>We also offer on-site fine dining, room service, airport shuttle, and concierge assistance to cater to your every need.</h2></p></marquee>
+
+
+<section id="amenities">
+  <h2>Our Amenities</h2>
+  <div class="amenities-grid">
+    <div class="amenity">
+      <img src="https://www.rovrscore.com/wp-content/uploads/2023/03/shutterstock_742091794-scaled.jpg" alt="Free Wi-Fi">
+      <p>Free High-Speed Wi-Fi</p>
+    </div>
+    <div class="amenity">
+      <img src="https://www.tripsavvy.com/thmb/AGIlO5wCymL1v36DqQYY4TV1oyk=/8688x5792/filters:no_upscale():max_bytes(150000):strip_icc()/InterContinentalLADowntown_Pool_A3603-0b8b72ca92a54c9d943e0635561508c2.jpg" alt="Swimming Pool">
+      <p>Outdoor Swimming Pool</p>
+    </div>
+    <div class="amenity">
+      <img src="https://www.technogym.com/wpress/wp-content/uploads/2022/06/1-1.png" alt="Fitness Center">
+      <p>24/7 Fitness Center</p>
+    </div>
+
+  </div>
+</section>
+<footer class="footer">
+  <div class="footer-content">
+    <div class="footer-section about">
+      <h3>HotelVista</h3>
+      <p>Luxury redefined. Experience unmatched comfort and elegance in the heart of the city.</p>
+    </div>
+    <div class="footer-section links">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="rooms.html">Rooms</a></li>
+        <li><a href="dining.html">Dining</a></li>
+        <li><a href="spa.html">Spa</a></li>
+        <li><a href="event.html">Events</a></li>
+      </ul>
+    </div>
+    <div class="footer-section contact">
+      <h4>Contact Us</h4>
+      <p>123 Luxury Blvd, Downtown City</p>
+      <p>Email: contact@hotelvista.com</p>
+      <p>Phone: +1 (555) 123-4567</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    &copy; 2025 HotelVista. All rights reserved.
+  </div>
+</footer>
+
+

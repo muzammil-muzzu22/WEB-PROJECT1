@@ -1,0 +1,311 @@
+<?php include 'header.html';?>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" cpntent="width=device-width, initial-scale=1.0"/>
+    <title>hotel vista</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background-color: #1e2a38;
+  color: white;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 12px;
+  transition: background 0.3s;
+}
+
+.nav-links a:hover {
+  background-color: #324255;
+  border-radius: 4px;
+}
+
+.book-btn {
+  background-color: #ffb400;
+  color: #1e2a38;
+  padding: 8px 16px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.book-btn:hover {
+  background-color: #e6a200;
+}
+
+.footer {
+  background-color: #1e2a38;
+  color: #d0d4d9;
+  padding: 40px 0 20px;
+  font-size: 15px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.footer-section {
+  flex: 1;
+  margin: 20px;
+  min-width: 220px;
+}
+
+.footer-section h3, .footer-section h4 {
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section a {
+  text-decoration: none;
+  color: #d0d4d9;
+}
+
+.footer-section a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  border-top: 1px solid #3a4657;
+  padding-top: 15px;
+  font-size: 14px;
+}
+
+.rooms-section {
+  padding: 60px 20px;
+  background-color: #f7f9fc;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: #1e2a38;
+}
+
+.section-subtitle {
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 40px;
+}
+
+.room-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.room-card {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  overflow: hidden;
+  max-width: 320px;
+  transition: transform 0.3s;
+}
+
+.room-card:hover {
+  transform: translateY(-5px);
+}
+
+.room-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.room-info {
+  padding: 20px;
+  text-align: left;
+}
+
+.room-info h3 {
+  margin-top: 0;
+  color: #1e2a38;
+}
+
+.room-info p {
+  color: #555;
+  font-size: 0.95rem;
+  margin: 10px 0;
+}
+
+.room-features {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  font-size: 0.9rem;
+  color: #444;
+}
+
+.price {
+  font-weight: bold;
+  color: #1e2a38;
+  margin: 15px 0 10px;
+}
+
+.btn.book-now {
+  display: inline-block;
+  padding: 10px 18px;
+  background-color: #ffb400;
+  color: #1e2a38;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+.btn.book-now:hover {
+  background-color: #e0a500;
+}
+
+</style>
+<!-- Top Navigation Bar -->
+<header>
+  <nav class="navbar">
+    <div class="logo">HotelVista</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="rooms.html">Rooms</a></li>
+      <li><a href="dining.html">Dining</a></li>
+      <li><a href="amenities.html">Amenities</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="contacts.html">Contact</a></li>
+      <li><a href="book.html" class="book-btn">Book Now</a></li>
+    </ul>
+  </nav>
+</header>
+
+
+
+<section class="rooms-section" id="rooms">
+  <h2 class="section-title">Our Rooms</h2>
+  <p class="section-subtitle">Choose from a range of beautifully designed rooms and suites.</p>
+
+  <div class="room-cards">
+
+    <!-- Room 1 -->
+    <div class="room-card">
+      <img src="https://th.bing.com/th/id/R.b728f21f7c5bf2562b495ae8cf595585?rik=4EmhAElBy1VZ%2bg&riu=http%3a%2f%2fwww.marinabaysands.com%2fcontent%2fdam%2fsingapore%2fmarinabaysands%2fmaster%2fmain%2fhome%2fhotel%2fsuites%2fdeluxe-room-city-view.jpg&ehk=ijHur6xSM0heSb4ZIklf7ghlXkKiKAX7qJ5xblZXN0A%3d&risl=&pid=ImgRaw&r=0" alt="Deluxe Room">
+      <div class="room-info">
+        <h3>Deluxe King Room</h3>
+        <p>Spacious room with city view, king-size bed, and modern amenities.</p>
+        <ul class="room-features">
+          <li>🛏️ King Bed</li>
+          <li>🌆 City View</li>
+          <li>📶 Free Wi-Fi</li>
+          <li>❄️ Air Conditioning</li>
+        </ul>
+        <p class="price">From $180/night</p>
+        <a href="book.html" class="btn book-now">Book Now</a>
+      </div>
+    </div>
+
+    <!-- Room 2 -->
+    <div class="room-card">
+      <img src="https://www.theexcelsiorhotel.com.ph/wp-content/uploads/2023/11/Executive-One-bedroom-3-1-scaled.jpg" alt="Executive Suite">
+      <div class="room-info">
+        <h3>Executive Suite</h3>
+        <p>Luxury suite with living area, private balcony, and complimentary minibar.</p>
+        <ul class="room-features">
+          <li>🛌 Queen Bed</li>
+          <li>🌄 Balcony View</li>
+          <li>🍸 Minibar</li>
+          <li>📺 Smart TV</li>
+        </ul>
+        <p class="price">From $250/night</p>
+        <a href="book.html" class="btn book-now">Book Now</a>
+      </div>
+    </div>
+
+    <!-- ROOM 3-->
+     <div class="room-card">
+      <img src="https://media.danitel.vn/uploads/2023/07/23c629b5-6f59-40b5-8654-adf775c5b67d/standard-02.jpg?width=1900&height=1267" alt="Standard Room">
+      <div class="room-info">
+        <h3>Standard Room</h3>
+        <p>Our Standard Room offers the perfect blend of comfort and convenience.
+        Designed for solo travelers or couples, it features a cozy ambiance,
+        modern decor, and all the essential amenities for a relaxing stay.</p>
+        <ul class="room-features">
+          <li>✔ Queen-size bed</li>
+        <li>✔ Free high-speed Wi-Fi</li>
+        <li>✔ Air conditioning</li>
+        <li>✔ Flat-screen TV with cable</li>
+        <li>✔ Private bathroom with shower</li>
+        <li>✔ Mini fridge & coffee maker</li>
+        </ul>
+        <p class="price">From $89/night</p>
+        <a href="book.html" class="btn book-now">Book Now</a>
+      </div>
+    </div>
+
+
+  </div>
+</section>
+<footer class="footer">
+  <div class="footer-content">
+    <div class="footer-section about">
+      <h3>HotelVista</h3>
+      <p>Luxury redefined. Experience unmatched comfort and elegance in the heart of the city.</p>
+    </div>
+    <div class="footer-section links">
+      <h4>Quick Links</h4>
+      <ul>
+         <li><a href="rooms.html">Rooms</a></li>
+        <li><a href="dining.html">Dining</a></li>
+        <li><a href="spa.html">Spa</a></li>
+        <li><a href="event.html">Events</a></li>
+      </ul>
+    </div>
+    <div class="footer-section contact">
+      <h4>Contact Us</h4>
+      <p>123 Luxury Blvd, Downtown City</p>
+      <p>Email: contact@hotelvista.com</p>
+      <p>Phone: +1 (555) 123-4567</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    &copy; 2025 HotelVista. All rights reserved.
+  </div>
+</footer>
+</html>
+
+
+

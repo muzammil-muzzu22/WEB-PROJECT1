@@ -1,0 +1,205 @@
+
+<style>
+.spa-section {
+  padding: 80px 20px;
+  background: #f9f9f9;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 36px;
+  margin-bottom: 10px;
+  color: #2c3e50;
+}
+
+.section-subtitle {
+  font-size: 18px;
+  margin-bottom: 40px;
+  color: #7f8c8d;
+}
+
+.spa-services {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.spa-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+  width: 300px;
+  padding: 20px;
+  transition: transform 0.3s;
+}
+
+.spa-card:hover {
+  transform: translateY(-10px);
+}
+
+.spa-card img {
+  width: 100%;
+  height: 50%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.spa-card h3 {
+  font-size: 22px;
+  color: #34495e;
+  margin-bottom: 10px;
+}
+
+.spa-card p {
+  font-size: 15px;
+  color: #666;
+}
+
+body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f8f8f8;
+    }
+
+    /* Back button styling */
+    .back-button {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      padding: 10px 16px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      z-index: 1000;
+    }
+
+    .spa-section {
+      background: url('https://source.unsplash.com/1600x900/?spa,relaxation') no-repeat center center/cover;
+      color: rgba(139, 44, 194, 0.473);
+      padding: 80px 20px;
+      text-align: center;
+    }
+
+    .spa-section h2 {
+      font-size: 48px;
+      margin-bottom: 20px;
+    }
+
+    .spa-section p {
+      font-size: 18px;
+      max-width: 700px;
+      margin: 0 auto 40px;
+      line-height: 1.6;
+    }
+
+    .spa-services {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      margin-top: 40px;
+    }
+
+    .spa-card {
+      background-color: rgba(255, 255, 255, 0.9);
+      color: #333333dc;
+      border-radius: 10px;
+      padding: 20px;
+      width: 280px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .spa-card:hover {
+      transform: translateY(-10px);
+    }
+
+    .spa-card h3 {
+      margin-top: 0;
+      color: #4CAF50;
+    }
+
+    .spa-card p {
+      font-size: 15px;
+    }
+
+    @media (max-width: 768px) {
+      .spa-section h2 {
+        font-size: 36px;
+      }
+      .spa-card {
+        width: 90%;
+      }
+    }
+</style>
+
+<body>
+
+  <!-- Back Button -->
+  <button class="back-button" onclick="history.back()">← Back</button>
+
+  <!-- Spa Section -->
+  <section class="spa-section">
+    <h2>Relax & Rejuvenate</h2>
+    <p>Step into serenity at our luxurious spa. Indulge in massages, facials, and holistic therapies designed to leave you feeling refreshed and renewed.</p>
+
+    <div class="spa-services">
+      <div class="spa-card">
+        <h3>Swedish Massage</h3>
+        <p>A gentle full-body massage perfect for relaxation and stress relief.</p>
+        <strong>$80 / 60 mins</strong>
+      </div>
+      <div class="spa-card">
+        <h3>Aromatherapy</h3>
+        <p>Enjoy soothing essential oils to boost your mood and relax your mind.</p>
+        <strong>$95 / 60 mins</strong>
+      </div>
+      <div class="spa-card">
+        <h3>Deep Tissue Massage</h3>
+        <p>Targets deeper layers of muscles and connective tissue to ease tension.</p>
+        <strong>$110 / 60 mins</strong>
+      </div>
+      <div class="spa-card">
+        <h3>Facial Treatment</h3>
+        <p>Cleanses, exfoliates, and nourishes the skin for a healthy glow.</p>
+        <strong>$75 / 45 mins</strong>
+      </div>
+    </div>
+  </section>
+
+
+<!-- Spa Section Start -->
+<section id="spa" class="spa-section">
+  
+
+    <div class="spa-services">
+      <div class="spa-card">
+        <img src="https://img1.10bestmedia.com/Images/Photos/398387/GettyImages-913095166_55_660x440.jpg" alt="Massage Therapy">
+        <h3>Massage Therapy</h3>
+        <p>Unwind with our range of relaxing full-body massages from expert therapists.</p>
+      </div>
+
+      <div class="spa-card">
+        <img src="https://spaexperiencesiestakey.com/wp-content/uploads/2022/07/woman-relaxing-while-on-facial-treatment-2.jpg" alt="Facial Treatments">
+        <h3>Facial Treatments</h3>
+        <p>Revitalize your skin with deep-cleansing and hydrating facial options.</p>
+      </div>
+
+      <div class="spa-card">
+        <img src="https://saunapicker.com/wp-content/uploads/2019/11/best-steam-sauna.jpg" alt="Sauna & Steam">
+        <h3>Sauna & Steam</h3>
+        <p>Detox and feel refreshed in our state-of-the-art sauna and steam rooms.</p>
+      </div>
+       <div class="spa-card">
+    <img src="https://tse1.explicit.bing.net/th/id/OIP.-So1MeG4TON1AUT5CslxRAHaHa?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Aromatherapy">
+    <h3>Aromatherapy</h3>
+    <p>An enhanced session using premium essential oils and massage techniques to deeply relax your body and mind.</p>
+    </div>
+  </div>
+</section>
+<!-- Spa Section End -->

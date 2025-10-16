@@ -1,0 +1,208 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" cpntent="width=device-width, initial-scale=1.0"/>
+    <title>hotel vista</title>
+
+<style>
+    body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background-color: #1e2a38;
+  color: white;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 12px;
+  transition: background 0.3s;
+}
+
+.nav-links a:hover {
+  background-color: #324255;
+  border-radius: 4px;
+}
+
+.book-btn {
+  background-color: #ffb400;
+  color: #1e2a38;
+  padding: 8px 16px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.book-btn:hover {
+  background-color: #e6a200;
+}
+
+
+
+
+.footer {
+  background-color: #1e2a38;
+  color: #d0d4d9;
+  padding: 40px 0 20px;
+  font-size: 15px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.footer-section {
+  flex: 1;
+  margin: 20px;
+  min-width: 220px;
+}
+
+.footer-section h3, .footer-section h4 {
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section a {
+  text-decoration: none;
+  color: #d0d4d9;
+}
+
+.footer-section a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  border-top: 1px solid #3a4657;
+  padding-top: 15px;
+  font-size: 14px;
+}
+#gallery {
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+#gallery h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #222;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.gallery-grid img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-grid img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+
+</style>
+
+<!-- Top Navigation Bar -->
+<header>
+  <nav class="navbar">
+    <div class="logo">HotelVista</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="rooms.html">Rooms</a></li>
+      <li><a href="dining.html">Dining</a></li>
+      <li><a href="amenities.html">Amenities</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="contacts.html">Contact</a></li>
+      <li><a href="book.html" class="book-btn">Book Now</a></li>
+    </ul>
+  </nav>
+</header>
+
+
+<section id="gallery">
+  <h2>Photo Gallery</h2>
+  <div class="gallery-grid">
+    <img src="https://img.freepik.com/premium-photo/interior-hotel-lobby-luxury-hotel-lobby-interior-big-luxurious-hotel-lobby-interior-with-beautiful-chandeliers-grand-staircase-ai-generated_538213-2595.jpg?w=2000" alt="Hotel Lobby">
+    <img src="https://www.solanohotels.com/wp-content/uploads/2021/06/solano-deluxe-gallery-2.jpg" alt="Deluxe Room">
+    <img src="https://th.bing.com/th/id/R.d0c80c8d7f10a83a4125a248a0bc8fef?rik=VHgHqJ71HjTv0A&riu=http%3a%2f%2fsdpooldoctor.com%2fwp-content%2fgallery%2fpools-spas%2fCarmel-Valley-Modern-Pool-and-Spa-w-Sharp-Edges-2.jpg&ehk=KCEHmYNB8FWehyHrN2IntUWwvB8qgDeKcEMIgEdhCTQ%3d&risl=&pid=ImgRaw&r=0" alt="Swimming Pool">
+    <img src="https://thevendry.com/cdn-cgi/image/height=1920,width=1920,fit=contain,metadata=none/https://s3.us-east-1.amazonaws.com/uploads.thevendry.co/23052/1680193897274_KNIFE_Home_Slider4-1.jpg" alt="Restaurant">
+    <img src="https://www.hot-dinners.com/images/stories/blog/2022/amanoxt.jpg" alt="Rooftop View">
+    <img src="https://res.cloudinary.com/sagacity/image/upload/c_crop,h_2700,w_4159,x_0,y_0/c_limit,dpr_auto,f_auto,fl_lossy,q_80,w_1080/Trellis_Spa_Indoor_Reflection_Pool_rnecfk.jpg" alt="Spa Area">
+    <img src="https://offloadmedia.feverup.com/parissecret.com/wp-content/uploads/2019/11/23142005/shangri-la-hotel-paris-bar-botaniste-skiss-21.jpg">
+    <img src="https://deconnorcinema.com/assets/images/glavnaya/60-proektov.jpg">
+    <!-- Add more images as needed -->
+  </div>
+  
+</section>
+<footer class="footer">
+  <div class="footer-content">
+    <div class="footer-section about">
+      <h3>HotelVista</h3>
+      <p>Luxury redefined. Experience unmatched comfort and elegance in the heart of the city.</p>
+    </div>
+    <div class="footer-section links">
+      <h4>Quick Links</h4>
+      <ul>
+         <li><a href="rooms.html">Rooms</a></li>
+        <li><a href="dining.html">Dining</a></li>
+        <li><a href="spa.html">Spa</a></li>
+        <li><a href="event.html">Events</a></li>
+      </ul>
+    </div>
+    <div class="footer-section contact">
+      <h4>Contact Us</h4>
+      <p>123 Luxury Blvd, Downtown City</p>
+      <p>Email: contact@hotelvista.com</p>
+      <p>Phone: +1 (555) 123-4567</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    &copy; 2025 HotelVista. All rights reserved.
+  </div>
+</footer>
+</html>
+
+
+
+

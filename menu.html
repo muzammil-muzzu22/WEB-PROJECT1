@@ -1,0 +1,140 @@
+<style>
+.menu-section {
+  background-color: #fff;
+  color: #333;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.menu-section h2 {
+  font-size: 40px;
+  margin-bottom: 20px;
+  color: #4CAF50;
+}
+
+.menu-section p {
+  max-width: 700px;
+  margin: 0 auto 50px;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.menu-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.menu-card {
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 300px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+  text-align: left;
+}
+
+.menu-card:hover {
+  transform: translateY(-5px);
+}
+
+.menu-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.menu-info {
+  padding: 20px;
+}
+
+.menu-info h3 {
+  margin-top: 0;
+  color: #4CAF50;
+}
+
+.menu-info p {
+  margin: 10px 0;
+  font-size: 15px;
+}
+
+.menu-info .price {
+  display: block;
+  font-weight: bold;
+  font-size: 16px;
+  color: #333;
+  margin-top: 10px;
+}
+/* Back button styling */
+    .back-button {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      padding: 10px 16px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      z-index: 1000;
+    }
+
+</style>
+<body>
+    <!-- Back Button -->
+  <button class="back-button" onclick="history.back()">← Back</button>
+
+</body>
+
+<!-- Skyview Restaurant Menu with Images -->
+<section class="menu-section">
+  <h2>Skyview Restaurant Menu</h2>
+  <p>Discover a curated selection of gourmet dishes served with breathtaking views. From starters to decadent desserts, every dish is crafted to delight your palate.</p>
+
+  <div class="menu-cards">
+
+    <!-- Starter -->
+    <div class="menu-card">
+      <img src="https://tse2.mm.bing.net/th/id/OIP.JZLZJOJ8b6wB49lHdFpyZQHaHa?cb=12&w=800&h=800&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Bruschetta">
+      <div class="menu-info">
+        <h3>Bruschetta</h3>
+        <p>Grilled bread topped with fresh tomatoes, basil, and olive oil.</p>
+        <span class="price">$8</span>
+      </div>
+    </div>
+
+    <!-- Main Course -->
+    <div class="menu-card">
+      <img src="https://tse2.mm.bing.net/th/id/OIP.FOgjaE4Ntw5vtNNbnOkV9wHaFj?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Ribeye Steak">
+      <div class="menu-info">
+        <h3>Ribeye Steak</h3>
+        <p>Juicy grilled steak served with garlic butter and seasonal vegetables.</p>
+        <span class="price">$28</span>
+      </div>
+    </div>
+
+    <!-- Dessert -->
+    <div class="menu-card">
+      <img src="https://tse1.mm.bing.net/th/id/OIP.BkH6o6WQVwmqc5OsRJJmCwHaHa?cb=12&w=1500&h=1500&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Chocolate Lava Cake">
+      <div class="menu-info">
+        <h3>Chocolate Lava Cake</h3>
+        <p>Warm chocolate cake with a gooey molten center, served with vanilla ice cream.</p>
+        <span class="price">$9</span>
+      </div>
+    </div>
+
+    <!-- Extra Dish -->
+    <div class="menu-card">
+      <img src="https://www.cookingclassy.com/wp-content/uploads/2018/05/grilled-salmon-3.jpg" alt="Grilled Salmon">
+      <div class="menu-info">
+        <h3>Grilled Salmon</h3>
+        <p>Fresh salmon fillet grilled to perfection, served with lemon butter sauce.</p>
+        <span class="price">$22</span>
+      </div>
+    </div>
+
+  </div>
+</section>
